@@ -22,6 +22,4 @@ def view(url="http://zipansion.com/pm56"):
 	browser.visit(url)
 	expressvpn.disconnect()
 
-
-
 browser.view("http://zipansion.com/pm56")
