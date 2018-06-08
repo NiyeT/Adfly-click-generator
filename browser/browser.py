@@ -3,6 +3,8 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
+temp="http://zipansion.com/pm56"
+
 # browsers={
 # 	"Chrome":{
 # 		"dir":"/Cress/Drivers/chromedriver"
@@ -18,7 +20,7 @@ warnings.filterwarnings('ignore')
 
 # browser=vars(webdriver)[active_browser](browser_location)
 	
-browser=webdriver.PhantomJS("/usr/local/bin/phantomjs")
+browser=webdriver.Chrome("/Cress/Drivers/chromedriver")
 
 # browser=webdriver.Chrome("/Cress/Drivers/chromedriver")
 
@@ -29,5 +31,7 @@ def peek(url):
 	visit(url)
 	# browser.quit()
 
-peek("http://zipansion.com/pm56")
-# peek("https://google.com")
+# peek("http://zipansion.com/pm56")
+
+print(visit(temp))
+
