@@ -36,6 +36,8 @@ def change_ip(location=""):
 
 def change_server(location):
     locations=list_locations()
+    #get index of your current location
+    #set location to current index + 1
     disconnect()
     if(not location):
         if(server==len(locations)-1):
@@ -45,5 +47,3 @@ def change_server(location):
         return True
     else:
         return False
-
-print(list_locations())
